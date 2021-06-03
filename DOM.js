@@ -65,6 +65,7 @@ function handleResetPassword(auth, actionCode, continueUrl, lang) {
             <i class="fas fa-arrow-circle-left"></i>
             <div class="turn-back">Quay lại trang</div>
         </a>`;
+        console.log(newPassword);
       });
     }).catch((error) => {
         document.getElementsByClassName("bg-resetpassword")[0].innerHTML = "";
@@ -77,5 +78,6 @@ function handleResetPassword(auth, actionCode, continueUrl, lang) {
             <i class="fas fa-arrow-circle-left"></i>
             <div class="turn-back">Quay lại trang</div>
         </a>`;
+        console.log(newPassword);
     });
   }
