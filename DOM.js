@@ -38,7 +38,7 @@ function handleResetPassword(auth, actionCode, continueUrl, lang) {
   
       // TODO: Show the reset screen with the user's email and ask the user for
       // the new password.
-      var newPassword = Math.random.toString(36).slice(-8);
+      var newPassword = Math.random().toString(36).slice(-8);
   
       // Save the new password.
       auth.confirmPasswordReset(actionCode, newPassword).then((resp) => {
