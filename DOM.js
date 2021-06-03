@@ -39,7 +39,7 @@ function handleResetPassword(auth, actionCode, continueUrl, lang) {
       // TODO: Show the reset screen with the user's email and ask the user for
       // the new password.
       var newPassword = Math.random().toString(36).slice(-8);
-  
+      console.log("pass",newPassword);
       // Save the new password.
       auth.confirmPasswordReset(actionCode, newPassword).then((resp) => {
         document.getElementsByClassName("bg-resetpassword")[0].innerHTML = "";
@@ -65,7 +65,6 @@ function handleResetPassword(auth, actionCode, continueUrl, lang) {
             <i class="fas fa-arrow-circle-left"></i>
             <div class="turn-back">Quay lại trang</div>
         </a>`;
-        console.log(newPassword);
       });
     }).catch((error) => {
         document.getElementsByClassName("bg-resetpassword")[0].innerHTML = "";
@@ -78,6 +77,5 @@ function handleResetPassword(auth, actionCode, continueUrl, lang) {
             <i class="fas fa-arrow-circle-left"></i>
             <div class="turn-back">Quay lại trang</div>
         </a>`;
-        console.log(newPassword);
     });
   }
