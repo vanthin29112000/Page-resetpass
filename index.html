@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="./index.css">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/19793a3053.js" crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script> -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+    
 </head>
 <body>
     <div class="bg-resetpassword">
@@ -37,26 +41,26 @@
         </a> -->
     </div>
     <script >
-        var firebaseConfig = {
-            apiKey: "AIzaSyD-KMYYTXOpd_zWhYEw2op4I2fX7WALryA",
-            authDomain: "test-fb-bcea6.firebaseapp.com",
-            databaseURL: "https://test-fb-bcea6-default-rtdb.firebaseio.com",
-            projectId: "test-fb-bcea6",
-            storageBucket: "test-fb-bcea6.appspot.com",
-            messagingSenderId: "878951045612",
-            appId: "1:878951045612:web:3e2ca3bfefddd3259c88c9",
-            measurementId: "G-YBX2RD73CV"
-        };
+        // var firebaseConfig = {
+        //     apiKey: "AIzaSyD-KMYYTXOpd_zWhYEw2op4I2fX7WALryA",
+        //     authDomain: "test-fb-bcea6.firebaseapp.com",
+        //     databaseURL: "https://test-fb-bcea6-default-rtdb.firebaseio.com",
+        //     projectId: "test-fb-bcea6",
+        //     storageBucket: "test-fb-bcea6.appspot.com",
+        //     messagingSenderId: "878951045612",
+        //     appId: "1:878951045612:web:3e2ca3bfefddd3259c88c9",
+        //     measurementId: "G-YBX2RD73CV"
+        // };
 
-    //     var firebaseConfig = {
-    //     apiKey: "AIzaSyDcW7cHkVH6Uo-ZTO8hnr2xgQljE5vNzY8",
-    //     authDomain: "dstore-2505.firebaseapp.com",
-    //     projectId: "dstore-2505",
-    //     storageBucket: "dstore-2505.appspot.com",
-    //     messagingSenderId: "177445211998",
-    //     appId: "1:177445211998:web:b3c5d694129f6b840849cf",
-    //     measurementId: "G-XZY5LHEELT"
-    // };
+        var firebaseConfig = {
+        apiKey: "AIzaSyDcW7cHkVH6Uo-ZTO8hnr2xgQljE5vNzY8",
+        authDomain: "dstore-2505.firebaseapp.com",
+        projectId: "dstore-2505",
+        storageBucket: "dstore-2505.appspot.com",
+        messagingSenderId: "177445211998",
+        appId: "1:177445211998:web:b3c5d694129f6b840849cf",
+        measurementId: "G-XZY5LHEELT"
+    };
 
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
